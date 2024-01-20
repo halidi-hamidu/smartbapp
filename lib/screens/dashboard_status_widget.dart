@@ -48,7 +48,14 @@ class DashBoardStatusBarWidget extends StatelessWidget {
 
             // title2
 
-            Text(amount as String),
+            Row(
+              children: [
+                 Text(
+                  amount.toString(),
+                ),
+               
+              ],
+            )
           ],
         ),
       ),
