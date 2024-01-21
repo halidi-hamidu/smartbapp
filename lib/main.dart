@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:smartbapp/screens/dashboard_screen.dart';
-import 'package:smartbapp/screens/splash_screen.dart';
+import 'package:smartbapp/screens/dashboardScreen.dart';
+import 'package:smartbapp/screens/employeeScreen.dart';
+import 'package:smartbapp/screens/splashScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
       ), // Show the splash screen initially
       routes: {
         '/dashboard': (context) => DashboardScreen(),
+        '/employee': (context) => EmployeeScreen(),
         // Add more routes for other screens as needed
       },
     );

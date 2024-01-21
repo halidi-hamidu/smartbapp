@@ -1,0 +1,31 @@
+// body: FutureBuilder<List<ProductData>>(
+      //     future: DataService.fetchProductData(),
+      //     builder: (context, snapshot) {
+      //       if (snapshot.connectionState == ConnectionState.waiting) {
+      //         return Center(
+      //           child: CircularProgressIndicator(),
+      //         );
+      //       } else if (snapshot.hasError) {
+      //         return Center(
+      //           child: Text('Error: ${snapshot.error}'),
+      //         );
+      //       } else {
+      //         return ListView.builder(
+      //           itemCount: snapshot.data!.length,
+      //           itemBuilder: (context, index) {
+      //             final product = snapshot.data![index];
+      //             return ListTile(
+      //               title: Text('Product Name: ${product.productName}'),
+      //               subtitle: Text('Total Product Cost: \$${product.totalProductCost.toString()}'),
+      //             );
+      //           },
+      //         );
+      //       }
+      //     },
+      //   ),
+
+
+
+      temp 2
+
+      

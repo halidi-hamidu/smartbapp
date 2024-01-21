@@ -1,20 +1,28 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:smartbapp/assets/appstyle.dart';
 
 class SideBarButton extends StatelessWidget {
   final String  buttonName;
   final  buttonIcon;
-
-  const SideBarButton(
+   // Add a callback function to handle button tap
+  final VoidCallback onTapCallback;
+ 
+  
+   SideBarButton(
     {
-    super.key, 
+    Key? key, 
     required this.buttonName,
-    required this.buttonIcon, }
-    );
-
+    required this.buttonIcon,
+    required this.onTapCallback,
+ 
+    }
+    ) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Column(
+   
       children: [
         ListTile(
             title: Row(
@@ -32,7 +40,9 @@ class SideBarButton extends StatelessWidget {
             ),
             onTap: () {
               // Handle item 1 tap
+              onTapCallback();
               Navigator.pop(context);
+          
             },
           ),
           Divider(
